@@ -21,7 +21,7 @@ override_dh_auto_configure:
 	    --disable-coreaudio \
 	    --enable-gtk2 \
 	    --enable-gtk3 \
-	    --disable-vfs-curl \
+	    --enable-vfs-curl \
 	    --disable-lfm \
 	    --disable-artwork \
 	    --disable-artwork-network \
