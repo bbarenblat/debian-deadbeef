@@ -1,0 +1,171 @@
+.\"                                                                -*- nroff -*-
+.TH DEADBEEF "1" "December 29, 2014" "DeaDBeeF 0.6.2" "User Commands"
+.SH NAME
+deadbeef \- ultimate music player for GNU/Linux
+.SH SYNOPSIS
+.B deadbeef
+[\fIOPTION\fR]... [\-\- \fIFILE\fR]...
+.SH DESCRIPTION
+.\" Add any additional description here
+DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD, OpenSolaris,
+and other UNIX-like systems.  DeaDBeeF plays files encoded with MP3, Ogg Vorbis,
+FLAC, WAV, and AAC, as well as many exotic codecs, and it offers a
+fully-featured metadata editor with automatic character set detection and
+Unicode support.
+
+DeaDBeeF's interface is reminiscent of the well-known nonfree music player
+Foobar2000, including multiple playlists with selection via tabs, customizable
+groups within playlists, album cover display, global hotkey support, and OSD
+integration.
+
+When started without a file, \fBdeadbeef\fR opens a graphical window displaying
+the user's music library.  When started with a file, \fBdeadbeef\fR behaves in
+exactly the same way, but it also plays the specified file.
+
+The following options modify \fBdeadbeef\fR's behaviour.
+
+.TP
+\fB\-\-help\fR
+display a short help message and exit
+.TP
+\fB\-\-version\fR
+display the current DeaDBeeF version and exit
+.TP
+\fB\-\-gui\fR \fIPLUGIN\fR
+use the specified \fIPLUGIN\fR as the DeaDBeeF GUI (default: GTK2)
+
+.PP
+The following options control a running \fBdeadbeef\fR instance.  If no instance
+is running, they start \fBdeadbeef\fR and then control it.
+
+.TP
+\fB\-\-quit\fR
+exit \fBdeadbeef\fR
+.TP
+\fB\-\-play\fR
+begin playing music
+.TP
+\fB\-\-stop\fR
+stop playing music
+.TP
+\fB\-\-pause\fR
+pause playback
+.TP
+\fB\-\-toggle\-pause\fR
+toggle pause
+.TP
+\fB\-\-play\-pause\fR
+start playback if stopped; otherwise, toggle pause
+.TP
+\fB\-\-next\fR
+advance to the next song in the playlist
+.TP
+\fB\-\-prev\fR
+return to the previous song in the playlist
+.TP
+\fB\-\-random\fR
+select a random song in the playlist
+.TP
+\fB\-\-queue\fR
+queue the specified \fIFILE\fRs in the playlist
+.TP
+\fB\-\-nowplaying\fR \fIFORMAT\fR
+print the currently-playing track according to the specified \fIFORMAT\fR
+
+.SH "FORMAT CODES"
+The \-\-nowplaying option accepts the following format codes:
+
+.TP
+%a
+artist name
+.TP
+%b
+album name
+.TP
+%B
+band, album artist, albumartist, or artist
+.TP
+%c
+track comment
+.TP
+%c
+composer
+.TP
+%d
+directory, without full path
+.TP
+%D
+directory, including full path
+.TP
+%e
+time elapsed through playback
+.TP
+%f
+file name, without path
+.TP
+%F
+file name, including path or URL
+.TP
+%g
+genre
+.TP
+%l
+track length
+.TP
+%L
+total playback length of playlist
+.TP
+%n
+track number
+.TP
+%N
+number of tracks in album
+.TP
+%r
+copyright information
+.TP
+%t
+track title, or file name if no title metadatum exists
+.TP
+%T
+tags
+.TP
+%V
+DeaDBeeF version number
+.TP
+%X
+number of selected tracks in current playlist
+.TP
+%y
+track date
+.TP
+%Z
+channel configuration (mono, stereo, etc.)
+.TP
+%@\fIFIELD_NAME\fR@
+Direct metadata access.  Specify any metadata field as \fIFIELD_NAME\fR, and
+DeaDBeeF will read that metadata field from the currently playing track.
+
+You can also specify derived track properties by prefixing them with a colon.
+For instance, %@:BITRATE@ will expand to the bitrate of the current track.
+These track properties are visible on the \fBProperties\fR tab of the \fBTrack
+Properties\fR dialog.
+
+.SH AUTHOR
+DeaDBeef is the work of many authors; the primary author is Alexey Yakovenko.
+Benjamin Barenblat wrote this manual page for the Debian project.
+
+.SH "REPORTING BUGS"
+Report bugs in DeaDBeeF using the DeaDBeeF bug tracker at <https://code.google.com/p/ddb/issues/list>.  You may also use the Debian bug tracker <https://bugs.debian.org/deadbeef>.
+
+.SH COPYRIGHT
+DeaDBeeF is copyright \(co 2009-2014 Alexey Yakovenko and many others and
+licensed under the GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>.
+It is free software: you are free to change and redistribute it.  There is NO
+WARRANTY, to the extent permitted by law.
+
+Much of the DeaDBeeF code is available under more permissive licences.  See the
+various COPYING files throughout the DeaDBeeF source code for more details.
+
+This manual page is copyright \(co 2014 Benjamin Barenblat and licensed under
+the GNU GPL version 3 or later.
