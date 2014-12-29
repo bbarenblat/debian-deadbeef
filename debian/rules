@@ -22,7 +22,7 @@ override_dh_auto_configure:
 	    --enable-gtk2 \
 	    --enable-gtk3 \
 	    --enable-vfs-curl \
-	    --disable-lfm \
+	    --enable-lfm \
 	    --disable-artwork \
 	    --disable-artwork-network \
 	    --disable-supereq \
