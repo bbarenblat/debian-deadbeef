@@ -34,7 +34,7 @@ override_dh_auto_configure:
 	    --enable-hotkeys \
 	    --enable-vorbis \
 	    --enable-ffmpeg \
-	    --disable-flac \
+	    --enable-flac \
 	    --disable-sndfile \
 	    --disable-wavpack \
 	    --disable-cdda \
