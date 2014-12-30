@@ -33,7 +33,7 @@ override_dh_auto_configure:
 	    --disable-adplug \
 	    --enable-hotkeys \
 	    --enable-vorbis \
-	    --disable-ffmpeg \
+	    --enable-ffmpeg \
 	    --disable-flac \
 	    --disable-sndfile \
 	    --disable-wavpack \
