@@ -40,7 +40,7 @@ override_dh_auto_configure:
 	    --enable-cdda \
 	    --disable-gme \
 	    --enable-notify \
-	    --disable-shellexec \
+	    --enable-shellexec \
 	    --disable-musepack \
 	    --disable-wildmidi \
 	    --disable-tta \
