@@ -27,7 +27,7 @@ override_dh_auto_configure:
 	    --disable-artwork-network \
 	    --enable-supereq \
 	    --disable-sid \
-	    --disable-mad \
+	    --enable-mad \
 	    --disable-ffap \
 	    --disable-vtx \
 	    --disable-adplug \
