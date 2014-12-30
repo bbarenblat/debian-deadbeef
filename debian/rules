@@ -39,7 +39,7 @@ override_dh_auto_configure:
 	    --disable-wavpack \
 	    --enable-cdda \
 	    --disable-gme \
-	    --disable-notify \
+	    --enable-notify \
 	    --disable-shellexec \
 	    --disable-musepack \
 	    --disable-wildmidi \
