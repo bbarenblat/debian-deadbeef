@@ -57,7 +57,7 @@ override_dh_auto_configure:
 	    --disable-shn \
 	    --disable-psf \
 	    --enable-mono2stereo \
-	    --disable-shellexecui \
+	    --enable-shellexecui \
 	    --disable-alac \
 	    --disable-wma \
 	    --disable-pltbrowser \
