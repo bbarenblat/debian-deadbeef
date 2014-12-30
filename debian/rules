@@ -60,7 +60,7 @@ override_dh_auto_configure:
 	    --enable-shellexecui \
 	    --disable-alac \
 	    --disable-wma \
-	    --disable-pltbrowser \
+	    --enable-pltbrowser \
 	    --libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
 
 .PHONY: override_dh_compress
