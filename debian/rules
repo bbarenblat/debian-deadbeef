@@ -49,7 +49,7 @@ override_dh_auto_configure:
 	    --disable-mms \
 	    --disable-staticlink \
 	    --disable-src \
-	    --disable-m3u \
+	    --enable-m3u \
 	    --disable-vfs-zip \
 	    --disable-converter \
 	    --disable-artwork-imlib2 \
