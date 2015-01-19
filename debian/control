@@ -20,7 +20,8 @@ Build-Depends:
  libsndfile1-dev | libsndfile-dev,
  libvorbis-dev,
  libwavpack-dev,
- libx11-dev
+ libx11-dev,
+ oss4-dev
 Standards-Version: 3.9.6
 Homepage: http://deadbeef.sourceforge.net/
 

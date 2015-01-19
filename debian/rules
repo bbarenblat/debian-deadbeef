@@ -16,7 +16,7 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 	    --enable-nullout \
 	    --enable-alsa \
-	    --disable-oss \
+	    --enable-oss \
 	    --enable-pulse \
 	    --disable-coreaudio \
 	    --enable-gtk2 \
