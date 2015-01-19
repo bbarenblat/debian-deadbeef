@@ -1,0 +1,65 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@ --with autoreconf
+
+override_dh_autoreconf:
+	dh_autoreconf sh -- autogen.sh
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	    --disable-nullout \
+	    --disable-alsa \
+	    --disable-oss \
+	    --enable-pulse \
+	    --disable-coreaudio \
+	    --enable-gtk2 \
+	    --disable-gtk3 \
+	    --disable-vfs-curl \
+	    --disable-lfm \
+	    --disable-artwork \
+	    --disable-artwork-network \
+	    --disable-supereq \
+	    --disable-sid \
+	    --disable-mad \
+	    --disable-ffap \
+	    --disable-vtx \
+	    --disable-adplug \
+	    --disable-hotkeys \
+	    --enable-vorbis \
+	    --disable-ffmpeg \
+	    --disable-flac \
+	    --disable-sndfile \
+	    --disable-wavpack \
+	    --disable-cdda \
+	    --disable-gme \
+	    --disable-notify \
+	    --disable-shellexec \
+	    --disable-musepack \
+	    --disable-wildmidi \
+	    --disable-tta \
+	    --disable-dca \
+	    --disable-aac \
+	    --disable-mms \
+	    --disable-staticlink \
+	    --disable-src \
+	    --disable-m3u \
+	    --disable-vfs-zip \
+	    --disable-converter \
+	    --disable-artwork-imlib2 \
+	    --disable-dumb \
+	    --disable-shn \
+	    --disable-psf \
+	    --disable-mono2stereo \
+	    --disable-shellexecui \
+	    --disable-alac \
+	    --disable-wma \
+	    --disable-pltbrowser \
+	    --libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
+
+override_dh_install:
+	-$(RM) debian/tmp/usr/lib/*/deadbeef/*.la
+	-$(RM) debian/tmp/usr/lib/*/deadbeef/*.a
+	-$(RM) debian/deadbeef/usr/lib/*/deadbeef/*.so.0*
+	dh_install -XCOPYING.GPLv2 -XCOPYING.LGPLv2.1 --fail-missing
