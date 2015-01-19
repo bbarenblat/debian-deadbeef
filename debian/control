@@ -26,3 +26,14 @@ Description: Ultimate music player for GNU/Linux
  Foobar2000, including multiple playlists with selection via tabs, customizable
  groups within playlists, album cover display, global hotkey support, and OSD
  integration.
+
+Package: deadbeef-plugins-dev
+Architecture: all
+Section: libdevel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux systems - development files
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.
+ .
+ This package contains all supplementary files you need to develop your plugins
+ for DeaDBeeF.
