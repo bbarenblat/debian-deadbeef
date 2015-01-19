@@ -19,6 +19,7 @@ Build-Depends:
  libpulse-dev,
  libsndfile1-dev | libsndfile-dev,
  libvorbis-dev,
+ libwavpack-dev,
  libx11-dev
 Standards-Version: 3.9.6
 Homepage: http://deadbeef.sourceforge.net/

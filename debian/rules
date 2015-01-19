@@ -36,7 +36,7 @@ override_dh_auto_configure:
 	    --enable-ffmpeg \
 	    --enable-flac \
 	    --enable-sndfile \
-	    --disable-wavpack \
+	    --enable-wavpack \
 	    --enable-cdda \
 	    --disable-gme \
 	    --enable-notify \
