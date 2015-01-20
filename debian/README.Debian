@@ -1,0 +1,29 @@
+DeaDBeeF for Debian
+-------------------
+DeaDBeeF is a plugin-based system.  However, only some of the officially
+distributed plugins are packaged for Debian.
+
+  – The aac, alac, alsa, artwork, cdda, ddb_gui_GTK2, ddb_gui_GTK3,
+    ddb_mono2stereo, dsp_libsrc, ffmpeg, flac, hotkeys, lastfm, m3u, mpgmad,
+    notify, nullout, oss, pltbrowser_gtk2, pltbrowser_gtk3, pulse, shellexec,
+    shellexecui_gtk2, shellexecui_gtk3, sndfile, supereq, tta, vfs_curl, vorbis,
+    vtx, and wavpack plugins have no licensing or policy issues, and I’ve built
+    them.
+
+  – The adplug, dca, dumb, ffap, gme, mms, musepack, shn, sid, wildmidi, and wma
+    plugins currently run afoul of the binary duplication policy (DPM §4.13) and
+    are thus not yet packaged.
+
+  – The converter plugin currently installs data in incorrect locations.  It
+    needs patching.
+
+  – The vfs_zip plugin triggers a Lintian warning about hardening flags.  Until
+    I’ve determined why this is a problem, I’ve disabled it.
+
+  – The coreaudio plugin is useless on Debian systems, so it’s not built.
+
+  – Two plugins – ddb_ao and shn – rely on source which cannot be redistributed
+    under the DFSG.  I’ve cleaned the offending sources from the tree, which is
+    why DeaDBeeF releases have a +dfsg tag.
+
+ -- Benjamin Barenblat <bbaren@mit.edu>, Tue, 20 Jan 2015 16:06:17 -0500
