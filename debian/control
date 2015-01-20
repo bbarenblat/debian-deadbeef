@@ -41,6 +41,7 @@ Recommends:
  deadbeef-plugin-alac,
  deadbeef-plugin-artwork,
  deadbeef-plugin-cdda,
+ deadbeef-plugin-converter-gtk3 | deadbeef-plugin-converter,
  deadbeef-plugin-curl,
  deadbeef-plugin-flac,
  deadbeef-plugin-hotkeys,
@@ -235,6 +236,106 @@ Description: debugging symbols for deadbeef-plugin-cdda
  and Unicode support.
  .
  This package contains the debugging symbols for deadbeef-plugin-cdda.
+
+Package: deadbeef-plugin-converter-core
+Architecture: any
+Depends:
+ deadbeef-core (= ${binary:Version}),
+ flac,
+ lame,
+ libav-tools,
+ musepack-tools,
+ opus-tools,
+ vorbis-tools,
+ wavpack,
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - transcoder (core files)
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package provides core files DeaDBeeF needs to transcode between formats.
+
+Package: deadbeef-plugin-converter-core-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: deadbeef-plugin-converter-core (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for deadbeef-plugin-converter-core
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package contains the debugging symbols for deadbeef-plugin-converter-core.
+
+Package: deadbeef-plugin-converter-gtk2
+Architecture: any
+Depends:
+ deadbeef-core (= ${binary:Version}),
+ deadbeef-plugin-converter-core (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: deadbeef-plugin-converter
+Description: Ultimate music player for GNU/Linux - transcoder (GTK+ 2)
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package allows DeaDBeeF to transcode between formats and provides a GTK+ 2
+ GUI for doing so.
+
+Package: deadbeef-plugin-converter-gtk2-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: deadbeef-plugin-converter-gtk2 (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for deadbeef-plugin-converter-gtk2
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package contains the debugging symbols for deadbeef-plugin-converter-gtk2.
+
+Package: deadbeef-plugin-converter-gtk3
+Architecture: any
+Depends:
+ deadbeef-core (= ${binary:Version}),
+ deadbeef-plugin-converter-core (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: deadbeef-plugin-converter
+Description: Ultimate music player for GNU/Linux - transcoder (GTK+ 3)
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package allows DeaDBeeF to transcode between formats and provides a GTK+ 3
+ GUI for doing so.
+
+Package: deadbeef-plugin-converter-gtk3-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: deadbeef-plugin-converter-gtk3 (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for deadbeef-plugin-converter-gtk3
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package contains the debugging symbols for deadbeef-plugin-converter-gtk3.
 
 Package: deadbeef-plugin-curl
 Architecture: any

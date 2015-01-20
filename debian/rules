@@ -51,7 +51,7 @@ override_dh_auto_configure:
 	    --enable-src \
 	    --enable-m3u \
 	    --disable-vfs-zip \
-	    --disable-converter \
+	    --enable-converter \
 	    --enable-artwork-imlib2 \
 	    --disable-dumb \
 	    --disable-shn \
@@ -75,6 +75,9 @@ override_dh_strip:
 	dh_strip -pdeadbeef-plugin-alsa --dbg-package=deadbeef-plugin-alsa-dbg
 	dh_strip -pdeadbeef-plugin-artwork --dbg-package=deadbeef-plugin-artwork-dbg
 	dh_strip -pdeadbeef-plugin-cdda --dbg-package=deadbeef-plugin-cdda-dbg
+	dh_strip -pdeadbeef-plugin-converter-core --dbg-package=deadbeef-plugin-converter-core-dbg
+	dh_strip -pdeadbeef-plugin-converter-gtk2 --dbg-package=deadbeef-plugin-converter-gtk2-dbg
+	dh_strip -pdeadbeef-plugin-converter-gtk3 --dbg-package=deadbeef-plugin-converter-gtk3-dbg
 	dh_strip -pdeadbeef-plugin-curl --dbg-package=deadbeef-plugin-curl-dbg
 	dh_strip -pdeadbeef-plugin-flac --dbg-package=deadbeef-plugin-flac-dbg
 	dh_strip -pdeadbeef-plugin-gui-gtk2 --dbg-package=deadbeef-plugin-gui-gtk2-dbg

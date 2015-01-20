@@ -1,0 +1,79 @@
+From: Benjamin Barenblat <bbaren@mit.edu>
+Description: Remove references to non-free software in converter plugin
+ This patch adjusts the converter plugin's presets to only refer to codecs for
+ which free encoders are available.  It also adjusts the presets to use the
+ Debian-preferred avconv instead of ffmpeg.
+Forwarded: no
+Last-Updated: 2015-01-20
+--- a/plugins/converter/presets/AAC_(Nero_FAAC).txt
++++ /dev/null
+@@ -1,10 +0,0 @@
+-title AAC (Nero FAAC)
+-ext mp4
+-encoder faac -w -o %o -
+-method 0
+-id3v2_version 0
+-tag_id3v2 0
+-tag_id3v1 0
+-tag_apev2 0
+-tag_flac 0
+-tag_oggvorbis 0
+--- /dev/null
++++ b/plugins/converter/presets/AAC.txt
+@@ -0,0 +1,10 @@
++title AAC
++ext mp4
++encoder avconv -i %i -codec:a aac -strict experimental %o
++method 1
++id3v2_version 0
++tag_id3v2 0
++tag_id3v1 0
++tag_apev2 0
++tag_flac 0
++tag_oggvorbis 0
+--- a/plugins/converter/presets/ALAC.txt
++++ b/plugins/converter/presets/ALAC.txt
+@@ -1,6 +1,6 @@
+ title ALAC
+ ext m4a
+-encoder ffmpeg -i %i -acodec alac %o
++encoder avconv -i %i -codec:a alac %o
+ method 1
+ id3v2_version 0
+ tag_id3v2 0
+--- a/plugins/converter/presets/TTA.txt
++++ /dev/null
+@@ -1,10 +0,0 @@
+-title TTA
+-ext tta
+-encoder ttaenc -e -o %o %i
+-method 1
+-id3v2_version 1
+-tag_id3v2 1
+-tag_id3v1 0
+-tag_apev2 0
+-tag_flac 0
+-tag_oggvorbis 0
+--- a/plugins/converter/Makefile.am
++++ b/plugins/converter/Makefile.am
+@@ -14,7 +14,8 @@ endif
+ 
+ convdatadir = $(libdir)/deadbeef/convpresets
+ convdata_DATA = \
+-	presets/AAC_(Nero_FAAC).txt\
++	presets/AAC.txt\
++	presets/ALAC.txt\
+ 	presets/FLAC_(compression_level_5).txt\
+ 	presets/MP3_CBR_320_Kbps_(Lame).txt\
+ 	presets/MP3_VBR_192Kbps_(Lame).txt\
+@@ -23,9 +24,7 @@ convdata_DATA = \
+ 	presets/Ogg_FLAC.txt\
+ 	presets/Ogg_Vorbis_(-q_5).txt\
+ 	presets/Opus.txt\
+-	presets/TTA.txt\
+-	presets/WavPack.txt\
+-	presets/ALAC.txt
++	presets/WavPack.txt
+ 
+ EXTRA_DIST = $(convdata_DATA) converter.glade
+ 

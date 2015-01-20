@@ -1,0 +1,27 @@
+From: Benjamin Barenblat <bbaren@mit.edu>
+Description: Place converter plugin presets in /usr/share/deadbeef
+ These are architecture-independent files, so they ought to go in /usr/share.
+Forwarded: no
+Last-Updated: 2015-01-20
+--- a/plugins/converter/Makefile.am
++++ b/plugins/converter/Makefile.am
+@@ -12,7 +12,7 @@ pkglib_LTLIBRARIES = converter.la conver
+ endif
+ endif
+ 
+-convdatadir = $(libdir)/deadbeef/convpresets
++convdatadir = $(prefix)/share/deadbeef/convpresets
+ convdata_DATA = \
+ 	presets/AAC.txt\
+ 	presets/ALAC.txt\
+--- a/plugins/converter/converter.c
++++ b/plugins/converter/converter.c
+@@ -470,7 +470,7 @@ load_encoder_presets (void) {
+     }
+ 
+     char syspath[PATH_MAX];
+-    if (snprintf (syspath, sizeof (syspath), "%s/convpresets", deadbeef->get_plugin_dir ()) < 0) {
++    if (snprintf (syspath, sizeof (syspath), "%s/share/deadbeef/convpresets", deadbeef->get_prefix ()) < 0) {
+         return -1;
+     }
+ 

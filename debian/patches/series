@@ -5,3 +5,5 @@ gtkui-grammar-allows-setting.diff
 gtkui-grammar-allows-setting-2.diff
 desktop-keywords.diff
 debian-copying.diff
+converter-free-presets.diff
+converter-install-share.diff
