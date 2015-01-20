@@ -58,11 +58,16 @@ override_dh_auto_configure:
 	    --disable-pltbrowser \
 	    --libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
 
+.PHONY: override_dh_compress
 override_dh_compress:
 	dh_compress -XChangeLog
 
+.PHONY: override_dh_install
 override_dh_install:
 	-$(RM) debian/tmp/usr/lib/*/deadbeef/*.la
 	-$(RM) debian/tmp/usr/lib/*/deadbeef/*.a
 	-$(RM) debian/deadbeef/usr/lib/*/deadbeef/*.so.0*
 	dh_install -XCOPYING.GPLv2 -XCOPYING.LGPLv2.1 --fail-missing
+
+override_dh_installdocs:
+	dh_installdocs -XREADME
