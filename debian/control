@@ -30,7 +30,36 @@ Homepage: http://deadbeef.sourceforge.net/
 
 Package: deadbeef
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ deadbeef-core,
+ deadbeef-plugin-gui-gtk3 | deadbeef-plugin-gui,
+ deadbeef-plugin-pulse [linux-any] | deadbeef-plugin-oss [!linux-any] | deadbeef-plugin-output,
+ deadbeef-plugin-vorbis | deadbeef-plugin-decoder,
+ ${misc:Depends}
+Recommends:
+ deadbeef-plugin-aac,
+ deadbeef-plugin-alac,
+ deadbeef-plugin-artwork,
+ deadbeef-plugin-cdda,
+ deadbeef-plugin-curl,
+ deadbeef-plugin-flac,
+ deadbeef-plugin-hotkeys,
+ deadbeef-plugin-lastfm,
+ deadbeef-plugin-libavcodec,
+ deadbeef-plugin-m3u,
+ deadbeef-plugin-mono2stereo,
+ deadbeef-plugin-mp3,
+ deadbeef-plugin-notify,
+ deadbeef-plugin-pltbrowser-gtk3 | deadbeef-plugin-pltbrowser,
+ deadbeef-plugin-resampler,
+ deadbeef-plugin-shellexec-gtk3 | deadbeef-plugin-shellexec-gui,
+ deadbeef-plugin-supereq,
+ deadbeef-plugin-sndfile,
+ deadbeef-plugin-tta,
+ deadbeef-plugin-wavpack,
+ deadbeef-plugin-vtx
+Suggests:
+ deadbeef-plugin-nullout
 Description: Ultimate music player for GNU/Linux
  DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
  OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
@@ -38,21 +67,441 @@ Description: Ultimate music player for GNU/Linux
  offers a fully-featured metadata editor with automatic character set detection
  and Unicode support.
  .
- DeaDBeeF's interface is reminiscent of the well-known nonfree music player
- Foobar2000, including multiple playlists with selection via tabs, customizable
- groups within playlists, album cover display, global hotkey support, and OSD
- integration.
+ This package provides base files for DeaDBeeF; it also depends on the DeaDBeeF
+ core and various other DeaDBeeF packages.  Installing it gets you a GTK+ 3 GUI
+ and enables playback of Ogg Vorbis files.
 
-Package: deadbeef-dbg
+Package: deadbeef-core
 Architecture: any
-Section: debug
-Priority: extra
-Depends: deadbeef (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
-Description: Ultimate music player for GNU/Linux systems - debug files
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - core package
  DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
- OpenSolaris, and other UNIX-like systems.
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
  .
- This package contains gdb debugging symbols for the deadbeef package.
+ This package contains the primary DeaDBeeF executable, which can load other
+ plugins.
+
+Package: deadbeef-plugin-aac
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - AAC decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables AAC decoding for DeaDBeeF.
+
+Package: deadbeef-plugin-alac
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - ALAC decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables Apple Lossless decoding for DeaDBeeF.
+
+Package: deadbeef-plugin-alsa
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-output
+Description: Ultimate music player for GNU/Linux - ALSA output
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables ALSA output for DeaDBeeF.
+
+Package: deadbeef-plugin-artwork
+Architecture: any
+Depends:
+ deadbeef-core (= ${binary:Version}),
+ deadbeef-plugin-gui-gtk3 | deadbeef-plugin-gui,
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - artwork display
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables artwork display in the DeaDBeeF GUI.
+
+Package: deadbeef-plugin-cdda
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - CDDA decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables CDDA playback in DeaDBeeF.
+
+Package: deadbeef-plugin-curl
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - network interface
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables network playback in DeaDBeeF using the cURL library.
+
+Package: deadbeef-plugin-flac
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - FLAC decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables FLAC decoding for DeaDBeeF.
+
+Package: deadbeef-plugin-gui-gtk2
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-gui
+Description: Ultimate music player for GNU/Linux - GTK+ 2 GUI
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package contains DeaDBeeF’s GTK+ 2 GUI.
+
+Package: deadbeef-plugin-gui-gtk3
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-gui
+Description: Ultimate music player for GNU/Linux - GTK+ 3 GUI
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package contains DeaDBeeF’s GTK+ 3 GUI.
+
+Package: deadbeef-plugin-hotkeys
+Architecture: any
+Depends:
+ deadbeef-core (= ${binary:Version}),
+ deadbeef-plugin-gui-gtk3 | deadbeef-plugin-gui,
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - hotkey bindings
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables hotkeys in the DeaDBeeF GUI.
+
+Package: deadbeef-plugin-lastfm
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - Last.FM scrobbler
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package provides a scrobbler for DeaDBeeF.
+
+Package: deadbeef-plugin-libavcodec
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - libavcodec decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package allows DeaDBeeF to decode any format supported by libavcodec.
+
+Package: deadbeef-plugin-m3u
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - M3U parser
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables M3U handling in DeaDBeeF.
+
+Package: deadbeef-plugin-mono2stereo
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - mono-to-stereo conversion
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package allows DeaDBeeF to convert monoaural audio to stereophonic audio
+ on-the-fly.
+
+Package: deadbeef-plugin-mp3
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - MPEG audio decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables MP3 (actually, all MPEG audio) decoding for DeaDBeeF.
+
+Package: deadbeef-plugin-notify
+Architecture: any
+Depends:
+ deadbeef-core (= ${binary:Version}),
+ notify-osd | notification-daemon,
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - OSD notifications
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package allows DeaDBeeF to deliver OSD notifications via D-Bus.
+
+Package: deadbeef-plugin-nullout
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-output
+Description: Ultimate music player for GNU/Linux - null output
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package provides a null output sink for DeaDBeeF.
+
+Package: deadbeef-plugin-oss
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-output
+Description: Ultimate music player for GNU/Linux - OSS output
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables OSS output for DeaDBeeF.
+
+Package: deadbeef-plugin-pltbrowser-gtk2
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-pltbrowser
+Description: Ultimate music player for GNU/Linux - playlist browser (GTK+ 2)
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package gives DeaDBeeF a GTK+ 2 playlist browser.
+
+Package: deadbeef-plugin-pltbrowser-gtk3
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-pltbrowser
+Description: Ultimate music player for GNU/Linux - playlist browser (GTK+ 3)
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package gives DeaDBeeF a GTK+ 3 playlist browser.
+
+Package: deadbeef-plugin-pulse
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-output
+Description: Ultimate music player for GNU/Linux - PulseAudio output
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables PulseAudio output for DeaDBeeF.
+
+Package: deadbeef-plugin-resampler
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - resampler
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables resampling within DeaDBeeF.
+
+Package: deadbeef-plugin-shellexec-core
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - shell executor (core files)
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package allows DeaDBeeF to execute arbitrary, user-specified shell
+ commands.  However, it does not provide a GUI to set them up; for that, see
+ deadbeef-plugin-shellexec-gtk3 or deadbeef-plugin-shellexec-gtk2.
+
+Package: deadbeef-plugin-shellexec-gtk2
+Architecture: any
+Depends:
+ deadbeef-core (= ${binary:Version}),
+ deadbeef-plugin-shellexec-core (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: deadbeef-plugin-shellexec-gui
+Description: Ultimate music player for GNU/Linux - shell executor (GTK+ 2)
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package allows DeaDBeeF to execute arbitrary, user-specified shell
+ commands; it provides a GTK+ 2 GUI to define them.
+
+Package: deadbeef-plugin-shellexec-gtk3
+Architecture: any
+Depends:
+ deadbeef-core (= ${binary:Version}),
+ deadbeef-plugin-shellexec-core (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: deadbeef-plugin-shellexec-gui
+Description: Ultimate music player for GNU/Linux - shell executor (GTK+ 3)
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package allows DeaDBeeF to execute arbitrary, user-specified shell
+ commands; it provides a GTK+ 3 GUI to define them.
+
+Package: deadbeef-plugin-sndfile
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - WAV/AIFF decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables WAV and AIFF decoding for DeaDBeeF.  It uses libsndfile,
+ so you also get any other format libsndfile supports.
+
+Package: deadbeef-plugin-supereq
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux - SuperEq DSP
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables the SuperEq DSP equalizer in DeaDBeeF.
+
+Package: deadbeef-plugin-tta
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - True Audio decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables True Audio decoding for DeaDBeeF.
+
+Package: deadbeef-plugin-wavpack
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - WavPack decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables WavPack decoding for DeaDBeeF.
+
+Package: deadbeef-plugin-vorbis
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - Vorbis decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables Ogg Vorbis decoding for DeaDBeeF.
+
+Package: deadbeef-plugin-vtx
+Architecture: any
+Depends: deadbeef-core (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Provides: deadbeef-plugin-decoder
+Description: Ultimate music player for GNU/Linux - VTX decoder
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.  DeaDBeeF plays files encoded with
+ MP3, Ogg Vorbis, FLAC, WAV, and AAC, as well as many exotic codecs, and it
+ offers a fully-featured metadata editor with automatic character set detection
+ and Unicode support.
+ .
+ This package enables Vortex Tracker decoding for DeaDBeeF.
 
 Package: deadbeef-plugins-dev
 Architecture: all
