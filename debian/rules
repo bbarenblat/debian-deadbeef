@@ -48,7 +48,7 @@ override_dh_auto_configure:
 	    --enable-aac \
 	    --disable-mms \
 	    --disable-staticlink \
-	    --disable-src \
+	    --enable-src \
 	    --enable-m3u \
 	    --disable-vfs-zip \
 	    --disable-converter \

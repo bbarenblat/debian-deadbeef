@@ -19,6 +19,7 @@ Build-Depends:
  libimlib2-dev,
  libmad0-dev,
  libpulse-dev,
+ libsamplerate0-dev | libsamplerate-dev,
  libsndfile1-dev | libsndfile-dev,
  libvorbis-dev,
  libwavpack-dev,
