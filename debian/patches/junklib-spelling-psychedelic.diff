@@ -1,0 +1,41 @@
+From: Alexey Yakovenko <wakeroid@gmail.com>
+Description: junklib: use Psychedelic instead of Psychadelic
+ The ID3v1 standard misspells ‘psychedelic’ as ‘psychadelic’.  This patch hides
+ this from the user; it will replace ‘psychadelic’ with ‘psychedelic’ when
+ reading, and it will write both as 67 (‘psychadelic’).
+Origin: upstream, https://github.com/Alexey-Yakovenko/deadbeef/commit/51f377563cbb559dfcae5a6583961f22f0fe6af0
+Bug: https://code.google.com/p/ddb/issues/detail?id=1256
+--- a/junklib.c
++++ b/junklib.c
+@@ -579,7 +579,7 @@ static const char *junk_genretbl[] = {
+     "Native American",
+     "Cabaret",
+     "New Wave",
+-    "Psychadelic",
++    "Psychedelic",
+     "Rave",
+     "Showtunes",
+     "Trailer",
+@@ -1046,6 +1046,10 @@ junk_id3v1_write2 (int fd, playItem_t *i
+                 break;
+             }
+         }
++        // workaround for the id3v1 std spelling error
++        if (genreid == 0xff && !strcasecmp (meta, "Psychadelic")) {
++            genreid = 67;
++        }
+     }
+ 
+     pl_unlock ();
+@@ -1146,7 +1150,11 @@ junk_id3v1_write (FILE *fp, playItem_t *
+                 break;
+             }
+         }
++        // workaround for the id3v1 std spelling error
++        if (genreid == 0xff && !strcasecmp (meta, "Psychadelic")) {
++            genreid = 67;
++        }
+     }
+ 
+     pl_unlock ();
+ 
