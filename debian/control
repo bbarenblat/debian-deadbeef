@@ -27,6 +27,8 @@ Build-Depends:
  oss4-dev
 Standards-Version: 3.9.6
 Homepage: http://deadbeef.sourceforge.net/
+Vcs-Browser: https://benjamin.barenblat.name/gitweb/?p=debian-deadbeef.git
+Vcs-Git: git://benjamin.barenblat.name/debian-deadbeef.git
 
 Package: deadbeef
 Architecture: any
