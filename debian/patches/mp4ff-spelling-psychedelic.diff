@@ -1,0 +1,26 @@
+From: Benjamin Barenblat <bbaren@mit.edu>
+Description: mp4meta: use Psychedelic instead of Psychadelic
+ The ID3v1 standard misspells ‘psychedelic’ as ‘psychadelic’.  This patch hides
+ this from the user.
+Forwarded: no
+Last-Update: 2015-01-19
+--- a/plugins/libmp4ff/mp4meta.c
++++ b/plugins/libmp4ff/mp4meta.c
+@@ -115,7 +115,7 @@ static const char* ID3v1GenreList[] = {
+     "Ethnic", "Gothic", "Darkwave", "Techno-Industrial", "Electronic", "Pop-Folk",
+     "Eurodance", "Dream", "Southern Rock", "Comedy", "Cult", "Gangsta",
+     "Top 40", "Christian Rap", "Pop/Funk", "Jungle", "Native American", "Cabaret",
+-    "New Wave", "Psychadelic", "Rave", "Showtunes", "Trailer", "Lo-Fi",
++    "New Wave", "Psychedelic", "Rave", "Showtunes", "Trailer", "Lo-Fi",
+     "Tribal", "Acid Punk", "Acid Jazz", "Polka", "Retro", "Musical",
+     "Rock & Roll", "Hard Rock", "Folk", "Folk/Rock", "National Folk", "Swing",
+     "Fast-Fusion", "Bebob", "Latin", "Revival", "Celtic", "Bluegrass", "Avantgarde",
+@@ -135,6 +135,8 @@ static const char* ID3v1GenreList[] = {
+ uint32_t mp4ff_meta_genre_to_index(const char * genrestr)
+ {
+ 	unsigned n;
++	/* workaround for the id3v1 std spelling error */
++	if(!stricmp(genrestr,"Psychadelic")) return 68;
+ 	for(n=0;n<sizeof(ID3v1GenreList)/sizeof(ID3v1GenreList[0]);n++)
+ 	{
+ 		if (!stricmp(genrestr,ID3v1GenreList[n])) return n+1;

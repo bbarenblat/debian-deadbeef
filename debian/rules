@@ -45,7 +45,7 @@ override_dh_auto_configure:
 	    --disable-wildmidi \
 	    --disable-tta \
 	    --disable-dca \
-	    --disable-aac \
+	    --enable-aac \
 	    --disable-mms \
 	    --disable-staticlink \
 	    --disable-src \
