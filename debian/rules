@@ -67,6 +67,41 @@ override_dh_auto_configure:
 override_dh_compress:
 	dh_compress -XChangeLog
 
+.PHONY: override_dh_strip
+override_dh_strip:
+	dh_strip -pdeadbeef-core --dbg-package=deadbeef-core-dbg
+	dh_strip -pdeadbeef-plugin-aac --dbg-package=deadbeef-plugin-aac-dbg
+	dh_strip -pdeadbeef-plugin-alac --dbg-package=deadbeef-plugin-alac-dbg
+	dh_strip -pdeadbeef-plugin-alsa --dbg-package=deadbeef-plugin-alsa-dbg
+	dh_strip -pdeadbeef-plugin-artwork --dbg-package=deadbeef-plugin-artwork-dbg
+	dh_strip -pdeadbeef-plugin-cdda --dbg-package=deadbeef-plugin-cdda-dbg
+	dh_strip -pdeadbeef-plugin-curl --dbg-package=deadbeef-plugin-curl-dbg
+	dh_strip -pdeadbeef-plugin-flac --dbg-package=deadbeef-plugin-flac-dbg
+	dh_strip -pdeadbeef-plugin-gui-gtk2 --dbg-package=deadbeef-plugin-gui-gtk2-dbg
+	dh_strip -pdeadbeef-plugin-gui-gtk3 --dbg-package=deadbeef-plugin-gui-gtk3-dbg
+	dh_strip -pdeadbeef-plugin-hotkeys --dbg-package=deadbeef-plugin-hotkeys-dbg
+	dh_strip -pdeadbeef-plugin-lastfm --dbg-package=deadbeef-plugin-lastfm-dbg
+	dh_strip -pdeadbeef-plugin-libavcodec --dbg-package=deadbeef-plugin-libavcodec-dbg
+	dh_strip -pdeadbeef-plugin-m3u --dbg-package=deadbeef-plugin-m3u-dbg
+	dh_strip -pdeadbeef-plugin-mono2stereo --dbg-package=deadbeef-plugin-mono2stereo-dbg
+	dh_strip -pdeadbeef-plugin-mp3 --dbg-package=deadbeef-plugin-mp3-dbg
+	dh_strip -pdeadbeef-plugin-notify --dbg-package=deadbeef-plugin-notify-dbg
+	dh_strip -pdeadbeef-plugin-nullout --dbg-package=deadbeef-plugin-nullout-dbg
+	dh_strip -pdeadbeef-plugin-oss --dbg-package=deadbeef-plugin-oss-dbg
+	dh_strip -pdeadbeef-plugin-pltbrowser-gtk2 --dbg-package=deadbeef-plugin-pltbrowser-gtk2-dbg
+	dh_strip -pdeadbeef-plugin-pltbrowser-gtk3 --dbg-package=deadbeef-plugin-pltbrowser-gtk3-dbg
+	dh_strip -pdeadbeef-plugin-pulse --dbg-package=deadbeef-plugin-pulse-dbg
+	dh_strip -pdeadbeef-plugin-resampler --dbg-package=deadbeef-plugin-resampler-dbg
+	dh_strip -pdeadbeef-plugin-shellexec-core --dbg-package=deadbeef-plugin-shellexec-core-dbg
+	dh_strip -pdeadbeef-plugin-shellexec-gtk2 --dbg-package=deadbeef-plugin-shellexec-gtk2-dbg
+	dh_strip -pdeadbeef-plugin-shellexec-gtk3 --dbg-package=deadbeef-plugin-shellexec-gtk3-dbg
+	dh_strip -pdeadbeef-plugin-sndfile --dbg-package=deadbeef-plugin-sndfile-dbg
+	dh_strip -pdeadbeef-plugin-supereq --dbg-package=deadbeef-plugin-supereq-dbg
+	dh_strip -pdeadbeef-plugin-tta --dbg-package=deadbeef-plugin-tta-dbg
+	dh_strip -pdeadbeef-plugin-wavpack --dbg-package=deadbeef-plugin-wavpack-dbg
+	dh_strip -pdeadbeef-plugin-vorbis --dbg-package=deadbeef-plugin-vorbis-dbg
+	dh_strip -pdeadbeef-plugin-vtx --dbg-package=deadbeef-plugin-vtx-dbg
+
 .PHONY: override_dh_install
 override_dh_install:
 	-$(RM) debian/tmp/usr/lib/*/deadbeef/*.la
