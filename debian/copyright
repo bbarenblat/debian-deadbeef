@@ -1,0 +1,1022 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: DeaDBeeF
+Upstream-Contact: Alexey Yakovenko <waker@users.sourceforge.net>
+Source: https://github.com/Alexey-Yakovenko/deadbeef
+Copyright: 2009-2014 Alexey Yakovenko and contributors
+License: GPL-3+
+
+Files: *
+Copyright: 2009-2014 Alexey Yakovenko and contributors
+License: Zlib
+
+Files: acinclude.m4
+Copyright: 2009 Steven G. Johnson <stevenj@alum.mit.edu>
+           2009 Matteo Frigo
+License: GPL-3+ with Autoconf-generated exception
+
+Files: ConvertUTF/ConvertUTF.c ConvertUTF/ConvertUTF.h
+Copyright: 2001-2004 Unicode, Inc.
+License: Unicode
+
+Files: COPYING.GPLv2 COPYING.LGPLv2.1
+Copyright: 1989, 1991, 1999 Free Software Foundation, Inc.
+License: FSF-GPL
+
+Files: debian/*
+Copyright: 2012 Christian Marillat <marillat@deb-multimedia.org>
+           2013 Mateusz Łukasik <mati75@linuxmint.pl>
+           2013, 2014, 2015 Benjamin Barenblat <bbaren@mit.edu>
+License: GPL-3+
+
+Files: escape.c
+Copyright: 1998-2010 Daniel Stenberg <daniel@haxx.se> et al.
+License: curl
+
+Files: fastftoi.h
+Copyright: 2002-2008 Xiph.org Foundation
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ - Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ - Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ - Neither the name of the Xiph.org Foundation nor the names of its contributors
+ may be used to endorse or promote products derived from this software without
+ specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS''
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: fft.c fft.h
+Copyright: 2011 John Lindgren
+License: BSD-2-clause
+
+Files: intl/*
+Copyright: 1995-2010 Free Software Foundation, Inc.
+License: LGPL-2+
+
+Files: intl/plural.c
+Copyright: 1984, 1989, 1990, 2000-2006 Free Software Foundation, Inc.
+License: GPL-2+ with Bison-generated exception
+
+Files: md5/*
+Copyright: 1999, 2000, 2002 Aladdin Enterprises
+License: Zlib
+
+Files: plugins/aac/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/adplug/adplug/*
+       plugins/adplug/libbinio/*
+Copyright: 1999-2008 Simon Peter <dn.tlp@gmx.net> et al.
+           1998-2001 Ken Silverman
+           1999, 2000 Tatsuyuki Satoh
+License: LGPL-2.1+
+
+Files: plugins/adplug/adplug/adl.cpp
+Copyright: 2006 The ScummVM project
+           2006 Torbjorn Andersson and Johannes Schickel
+License: GPL-2+ or LGPL-2.1+
+
+Files: plugins/adplug/libbinio/COPYING
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: FSF-GPL
+
+Files: plugins/alac/alac.c
+       plugins/alac/demux.c
+       plugins/alac/stream.c
+Copyright: 2005 David Hammerton
+License: Expat
+
+Files: plugins/alac/alac_plugin.c
+Copyright: 2012, 2013 Alexey Yakovenko <waker@users.sourceforge.net>
+License: Expat
+
+Files: plugins/alsa/*
+Copyright: 2012, 2013 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/ao/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files:
+ plugins/ao/ao.h
+ plugins/ao/corlett.c plugins/ao/corlett.h
+ plugins/ao/cpuintrf.h
+ plugins/ao/eng_protos.h
+ plugins/ao/main.c
+ plugins/ao/mem.h
+ plugins/ao/eng_dsf/dc_hw.c plugins/ao/eng_dsf/dc_hw.h
+ plugins/ao/eng_dsf/eng_dsf.c
+ plugins/ao/eng_psf/*
+ plugins/ao/eng_qsf/eng_qsf.c
+ plugins/ao/eng_ssf/eng_ssf.c
+ plugins/ao/eng_ssf/sat_hw.c plugins/ao/eng_ssf/sat_hw.h
+Copyright: 2007-2009 R. Belmont and Richard Bannister
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+ .
+ * Neither the names of R. Belmont and Richard Bannister nor the names of its
+   contributors may be used to endorse or promote products der ived from this
+   software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: plugins/ao/eng_psf/peops/* plugins/ao/eng_psf/peops2/*
+Copyright: 2002 Pete Bernert
+License: GPL-2+
+
+Files: plugins/ao/eng_psf/peops/gauss_i.h plugins/ao/eng_psf/peops2/gauss_i.h
+Copyright: 2003 Chris Moeller
+License: GPL-2+
+
+Files:
+ plugins/ao/eng_psf/peops/License.txt
+ plugins/ao/eng_psf/peops2/License.txt
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: FSF-GPL
+
+Files: plugins/artwork/*
+Copyright: 2009-2014 Viktor Semykin <thesame.ml@gmail.com>
+           2009-2013 Alexey Yakovenko <waker@users.sourceforge.net>
+License: Zlib
+
+Files: plugins/artwork/escape.c
+Copyright: 1998-2010 Daniel Stenberg <daniel@haxx.se> et al.
+License: curl
+
+Files: plugins/cdda/*
+Copyright: 2009 Viktor Semykin <thesame.ml@gmail.com>
+           2009-2014 Alexey Yakovenko
+License: GPL-2+
+
+Files: plugins/converter/*
+Copyright: 2009-2013 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/coreaudio/*
+Copyright: 2011-2013 Carlos Nunes <carloslnunes@gmail.com>
+License: LGPL-2+
+
+Files: plugins/dca/*
+Copyright: 1999-2000 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>
+           2000-2003 Michel Lespinasse <walken@zoy.org>
+           2004 Gildas Bazin <gbazin@videolan.org>
+           2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/dsp_libsrc/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/dumb/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: Zlib
+
+Files: plugins/dumb/dumb-kode54/*
+Copyright: 2001-2005 Ben Davis, Robert J Ohannessian and Julien Cugniere
+License: DUMB
+
+Files: plugins/ffap/*
+Copyright: 2007 Benjamin Zores <ben@geexbox.org>
+           2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/ffap/asm.S
+Copyright: 2008 Mans Rullgard <mans@mansr.com>
+License: LGPL-2.1+
+
+Files: plugins/ffap/dsputil_yasm.asm plugins/ffap/x86inc.asm
+Copyright: 2005-2008 Loren Merritt
+License: LGPL-2.1+
+
+Files: plugins/ffap/int_neon.S
+Copyright: 2009 Kostya Shishkov
+License: LGPL-2.1+
+
+Files: plugins/ffmpeg/*
+Copyright: FFMPEG Developers
+           2009-2014 Alexey Yakovenko et al.
+License: GPL-2+
+
+Files: plugins/flac/*
+Copyright: 2009-2014 Alexey Yakovenko et al.
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ - Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ - Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ - Neither the name of the DeaDBeeF Player nor the names of its contributors may
+ be used to endorse or promote products derived from this software without
+ specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS''
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: plugins/gme/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: Zlib
+
+Files: plugins/gme/game-music-emu-0.6pre/*
+Copyright: 2002 Stephane Dallongeville
+           2003-2009 Shay Green
+License: LGPL-2+
+
+Files: plugins/gtkui/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+           2010 Viktor Semykin <thesame.ml@gmail.com>
+License: GPL-2+
+
+Files:
+ plugins/gtkui/actionhandlers.c plugins/gtkui/actionhandlers.h
+ plugins/gtkui/ctmapping.c plugins/gtkui/ctmapping.h
+ plugins/gtkui/gtkui_api.h
+ plugins/gtkui/hotkeys.c plugins/gtkui/hotkeys.h
+ plugins/gtkui/namedicons.c plugins/gtkui/namedicons.h
+ plugins/gtkui/pltmenu.c
+Copyright: 2009-2013 Alexey Yakovenko <waker@users.sourceforge.net>
+License: Zlib
+
+Files: plugins/hotkeys/*
+Copyright: 2009-2011 Viktor Semykin <thesame.ml@gmail.com>
+           2012-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: Zlib
+
+Files: plugins/lastfm/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: GPL-2+
+
+Files: plugins/libmp4ff/*
+Copyright: 2003-2005 M. Bakker, Nero AG, http://www.nero.com
+           2009-2014 Alexey Yakovenko
+License: GPL-2+
+
+Files: plugins/liboggedit/*
+Copyright: 2014 Ian Nartowicz <deadbeef@nartowicz.co.uk>
+License: Zlib
+
+Files: plugins/libparser/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/m3u/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/medialib/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/mms/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/mms/libmms/*
+Copyright: 2007-2010 Hans de Goede <j.w.r.degoede@hhs.nl>
+License: LGPL-2+
+
+Files:
+ plugins/mms/libmms/asfheader.h
+ plugins/mms/libmms/mms.c plugins/mms/libmms/mms.h
+ plugins/mms/libmms/mmsh.c plugins/mms/libmms/mmsh.h
+Copyright: 2000-2004 the xine project
+License: GPL-2+
+
+Files: plugins/mms/libmms/bswap.h
+Copyright: 2004 Maciej Katafiasz <mathrick@users.sourceforge.net>
+License: LGPL-2+
+
+Files: plugins/mms/libmms/COPYING.LIB
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: FSF-GPL
+
+Files: plugins/mms/libmms/uri.c plugins/mms/libmms/uri.h
+Copyright: 2000-2003 David Helder, David Bolcsfoldi, Eric Williams
+License: LGPL-2+
+
+Files: plugins/mono2stereo/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/mpgmad/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/musepack/*
+Copyright: 2005-2009 The Musepack Development Team
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ * Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ * Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ * Neither the name of the The Musepack Development Team nor the names of its
+ contributors may be used to endorse or promote products derived from this
+ software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: plugins/musepack/crc32.c
+Copyright: 2003 W3C
+License: W3C
+
+Files:
+ plugins/musepack/COPYING
+ plugins/musepack/Makefile.am
+ plugins/musepack/musepack.c
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/musepack/mpc/minimax.h
+Copyright: 1999-2004 Buschmann/Klemm/Piecha/Wolf
+License: LGPL-2.1+
+
+Files: plugins/notify/*
+Copyright: 2009-2014 Alexey Yakovenko and contributors
+License: GPL-2+
+
+Files: plugins/nullout/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/oss/*
+Copyright: 2009-2014 Alexey Yakovenko and contributors
+License: GPL-2+
+
+Files: plugins/pltbrowser/*
+Copyright: 2009-2014 Alexey Yakovenk
+License: Zlib
+
+Files: plugins/pulse/*
+Copyright: 2010 Anton Novikov <tonn.post@gmail.com>
+           2010-2012 Alexey Yakovenko <waker@users.sourceforge.net>
+           2011 Jan D. Behrens <zykure@web.de>
+License: GPL-2+
+
+Files: plugins/shellexec/*
+Copyright: 2010-2014 Deadbeef team
+License: GPL-2+
+
+Files: plugins/shellexecui/*
+Copyright: 2012 Azeem Arshad <kr00r4n@gmail.com>
+           2013-2014 Alexey Yakovenko
+License: GPL-2+
+
+Files: plugins/shn/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: Zlib
+
+Files:
+ plugins/shn/convert.c
+ plugins/shn/misc.c
+ plugins/shn/output.c
+ plugins/shn/seek.c
+ plugins/shn/shn.h
+ plugins/shn/wave.c
+Copyright: 2000-2007 Jason Jordan <shnutils@freeshell.org>
+License: GPL-2+
+
+Files: plugins/sndfile/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/soundtouch/*
+Copyright: 2009-2013 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/soundtouch/soundtouch/*
+Copyright: 2002-2009 Olli Parviainen
+License: LGPL-2.1+
+
+Files: plugins/soundtouch/soundtouch/COPYING.TXT
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: FSF-GPL
+
+Files: plugins/supereq/*
+Copyright: 2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/supereq/Equ.cpp plugins/supereq/paramlist.hpp
+Copyright: Naoki Shibata <shibatch@users.sf.net>
+           2009-2014 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+Files: plugins/supereq/Fftsg_fl.c
+Copyright: 1996-2001 Takuya OOURA
+License: Ooura
+
+Files: plugins/tta/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/tta/filter.h plugins/tta/ttadec.c plugins/tta/ttadec.h
+Copyright: 2004 True Audio Software
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ . 
+ 1. Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+ 3. Neither the name of the True Audio Software nor the names of its
+    contributors may be used to endorse or promote products derived from this
+    software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: plugins/tta/ttaplug.c
+Copyright: 2004 True Audio Software
+           2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/vfs_curl/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/vfs_zip/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/vorbis/*
+Copyright: 2009-2014 Alexey Yakovenko et al.
+           2014 Ian Nartowicz <deadbeef@nartowicz.co.uk>
+License: Zlib
+
+Files: plugins/vtx/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/vtx/ayemu.h
+Copyright: 2003-2004 Sashnov Alexander
+License: LGPL-2+
+
+Files: plugins/vtx/lh5dec.c
+Copyright: Haruhiko Okumura
+           Roman Scherbakov
+License: Zlib
+
+Files: plugins/vtx/vtx.c
+Copyright: 2005-2008 Alexander Sashnov
+           2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/wavpack/*
+Copyright: 2009-2011 Alexey Yakovenko <waker@users.sourceforge.net>
+           2010-2011 David Bryant <david@wavpack.com>
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+     * Redistributions of source code must retain the above copyright notice,
+       this list of conditions and the following disclaimer.
+     * Redistributions in binary form must reproduce the above copyright notice,
+       this list of conditions and the following disclaimer in the documentation
+       and/or other materials provided with the distribution.
+     * Neither the name of the <organization> nor the names of its contributors
+       may be used to endorse or promote products derived from this software
+       without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT,
+ INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: plugins/wildmidi/*
+Copyright: 2009-2014 Alexey Yakovenko
+License: Zlib
+
+Files: plugins/wildmidi/include/* plugins/wildmidi/src/*
+Copyright: 2001-2004 Chris Ison
+License: LGPL-2.1+
+
+Files: plugins/wildmidi/src/wildmidi.c
+Copyright: 2001-2004 Chris Ison
+License: GPL-2+
+
+Files: plugins/wma/*
+Copyright: 2013 Alexey Yakovenko <waker@users.sourceforge.net>
+License: Zlib
+
+Files:
+ plugins/wma/asfheader.c
+ plugins/wma/libasf/*
+Copyright: 2007 Dave Chapman
+License: GPL-2+
+
+Files:
+ plugins/wma/libwma/asm_arm.h
+ plugins/wma/libwma/codeclib_misc.h
+ plugins/wma/libwma/mdct_lookup.h
+Copyright: 1994-2002 Xiph.org Foundation
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ - Redistributions of source code must retain the above copyright notice, this
+ list of conditions and the following disclaimer.
+ .
+ - Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ - Neither the name of the Xiph.org Foundation nor the names of its contributors
+ may be used to endorse or promote products derived from this software without
+ specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS''
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files:
+ plugins/wma/libwma/ffmpeg_bitstream.c
+ plugins/wma/libwma/ffmpeg_get_bits.h
+ plugins/wma/libwma/ffmpeg_intreadwrite.h
+ plugins/wma/libwma/fft-ffmpeg.c
+ plugins/wma/libwma/fft.h
+ plugins/wma/libwma/mdct.c plugins/wma/libwma/mdct.h
+ plugins/wma/libwma/wmadata.h
+ plugins/wma/libwma/wmadec.h
+ plugins/wma/libwma/wmadeci.c
+Copyright: 2000-2002 Fabrice Bellard
+           2002 The FFmpeg Project
+           2002-2004 Michael Niedermayer <michaelni@gmx.at>
+           2008-2010 Loren Merritt
+           2010 Dave Hooper, Mohamed Tarek, Michael Giacomelli
+License: LGPL-2.1+
+
+Files:
+ plugins/wma/libwma/fft-ffmpeg_arm.h
+ plugins/wma/libwma/mdct_lookup.c
+ plugins/wma/libwma/wmafixed.c plugins/wma/libwma/wmafixed.h
+Copyright: 2007-2009 Michael Giacomell
+           2010 Dave Hooper
+License: GPL-2+
+
+Files: tools/apbuild/*
+Copyright: 2014 Free Software Foundation, Inc.
+License: GPL-3+
+
+Files: tools/glade/*
+Copyright: 1998-1999 Damon Chaplin
+           2002 Sun Microsystems, Inc.
+License: GPL-2+
+
+Files: tools/glade/COPYING
+Copyright: 1991, 1999 Free Software Foundation, Inc.
+License: FSF-GPL
+
+Files: tools/pluginfo/*
+Copyright: 2009-2013 Alexey Yakovenko <waker@users.sourceforge.net>
+License: GPL-2+
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice, this
+    list of conditions, and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions, and the following disclaimer in the documentation
+    provided with the distribution.
+ .
+ This software is provided "as is" and without any warranty, express or
+ implied. In no event shall the authors be liable for any damages arising from
+ the use of this software.
+
+License: curl
+ Permission to use, copy, modify, and distribute this software for any purpose
+ with or without fee is hereby granted, provided that the above copyright notice
+ and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN
+ NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+ OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of a copyright holder shall not be
+ used in advertising or otherwise to promote the sale, use or other dealings in
+ this Software without prior written authorization of the copyright holder.
+
+License: DUMB
+  Modification to licence terms for DUMB v0.9.3 (as of 25 February 2010)
+ .
+  Addition of a new clause directly after Clause 6:
+ .
+  8. Take the number stated as introducing this clause. Multiply it by two,
+     then subtract four. Now insert a '+' between the two digits and evaluate
+     the resulting sum. Call the result 'x'. If you have not yet concluded that
+     every numbered clause in this licence whose ordinal number is strictly
+     greater than 'x' (with the exception of the present clause) is null and
+     void, Debian, then you are hereby informed that laughter is good for one's
+     health and you are warmly suggested to do it. By the way, Clauses 4, 5 and
+     6 are null and void. Incidentally, I like Kubuntu. The work you guys do is
+     awesome. (Lawyers, on the other hand ...)
+ .
+  Licence for DUMB v0.9.3
+ .
+  /*  _______         ____    __         ___    ___
+   * \    _  \       \    /  \  /       \   \  /   /       '   '  '
+   *  |  | \  \       |  |    ||         |   \/   |         .      .
+   *  |  |  |  |      |  |    ||         ||\  /|  |
+   *  |  |  |  |      |  |    ||         || \/ |  |         '  '  '
+   *  |  |  |  |      |  |    ||         ||    |  |         .      .
+   *  |  |_/  /        \  \__//          ||    |  |
+   * /_______/ynamic    \____/niversal  /__\  /____\usic   /|  .  . ibliotheque
+   *                                                      /  \
+   *                                                     / .  \
+   * licence.txt - Conditions for use of DUMB.          / / \  \
+   *                                                   | <  /   \_
+   * If you do not agree to these terms, please        |  \/ /\   /
+   * do not use DUMB.                                   \_  /  > /
+   *                                                      | \ / /
+   * Information in [brackets] is provided to aid         |  ' /
+   * interpretation of the licence.                        \__/
+   */
+ .
+ .
+  Dynamic Universal Music Bibliotheque, Version 0.9.3
+ .
+  Copyright (C) 2001-2005 Ben Davis, Robert J Ohannessian and Julien Cugniere
+ .
+  This software is provided 'as-is', without any express or implied warranty.
+  In no event shall the authors be held liable for any damages arising from the
+  use of this software.
+ .
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
+ .
+  1. The origin of this software must not be misrepresented; you must not claim
+     that you wrote the original software. If you use this software in a
+     product, you are requested to acknowledge its use in the product
+     documentation, along with details on where to get an unmodified version of
+     this software, but this is not a strict requirement.
+ .
+     [Note that the above point asks for a link to DUMB, not just a mention.
+     Googling for DUMB doesn't help much! The URL is "http://dumb.sf.net/".]
+ .
+     [The link was originally strictly required. This was changed for two
+     reasons. Firstly, if many projects request an acknowledgement, the list of
+     acknowledgements can become quite unmanageable. Secondly, DUMB was placing
+     a restriction on the code using it, preventing people from using the GNU
+     General Public Licence which disallows any such restrictions. See
+     http://www.gnu.org/philosophy/bsd.html for more information on this
+     subject. However, if DUMB plays a significant part in your project, we do
+     urge you to acknowledge its use.]
+ .
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+ .
+  3. This notice may not be removed from or altered in any source distribution.
+ .
+  4. If you are using the Program in someone else's bedroom on any Monday at
+     3:05 pm, you are not allowed to modify the Program for ten minutes. [This
+     clause provided by Inphernic; every licence should contain at least one
+     clause, the reasoning behind which is far from obvious.]
+ .
+  5. Users who wish to use DUMB for the specific purpose of playing music are
+     required to feed their dog on every full moon (if deemed appropriate).
+     [This clause provided by Allefant, who couldn't remember what Inphernic's
+     clause was.]
+ .
+  6. No clause in this licence shall prevent this software from being depended
+     upon by a product licensed under the GNU General Public Licence. If such a
+     clause is deemed to exist, Debian, then it shall be respected in spirit as
+     far as possible and all other clauses shall continue to apply in full
+     force.
+ .
+  We regret that we cannot provide any warranty, not even the implied warranty
+  of merchantability or fitness for a particular purpose.
+ .
+  Some files generated or copied by automake, autoconf and friends are
+  available in an extra download. These fall under separate licences but are
+  all free to distribute. Please check their licences as necessary.
+Comment:
+ The addition in the beginning (paragraph 8) is not present in the file
+ licence.txt, but it is on the homepage <http://dumb.sourceforge.net/index.php?page=licences>.
+ It was added after the discussion of Debian bug #533555.
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+License: FSF-GPL
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation; either version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+ Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License version
+ 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-2+ with Bison-generated exception
+ This program is free software; you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation; either version 2, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+ Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General Public License version
+ 2 can be found in "/usr/share/common-licenses/GPL-2".
+ .
+ As a special exception, you may create a larger work that contains part or all
+ of the Bison parser skeleton and distribute that work under terms of your
+ choice, so long as that work isn't itself a parser generator using the skeleton
+ or a modified version thereof as a parser skeleton.  Alternatively, if you
+ modify or redistribute the parser skeleton itself, you may (at your option)
+ remove this special exception, which will cause the skeleton and the resulting
+ Bison output files to be licensed under the GNU General Public License without
+ this special exception.
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation, either version 3 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public License version
+ 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: GPL-3+ with Autoconf-generated exception
+ This program is free software: you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation, either version 3 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public License version
+ 3 can be found in "/usr/share/common-licenses/GPL-3".
+ .
+ As a special exception, the respective Autoconf Macro's copyright owner gives
+ unlimited permission to copy, distribute and modify the configure scripts that
+ are the output of Autoconf when processing the Macro.  You need not follow the
+ terms of the GNU General Public License when using or distributing such
+ scripts, even though portions of the text of the Macro appear in them.  The GNU
+ General Public License (GPL) does govern all other use of the material that
+ constitutes the Autoconf Macro.
+ .
+ This special exception to the GPL applies to versions of the Autoconf Macro
+ released by the Autoconf Archive.  When you make and distribute a modified
+ version of the Autoconf Macro, you may extend this special exception to the GPL
+ to apply to your modified version as well.
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Library General Public License as published by the Free
+ Software Foundation; either version 2 of the License, or (at your option) any
+ later version.
+ .
+ This library is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE.  See the GNU Library General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU Library General Public License
+ along with this library; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ On Debian systems, the complete text of the GNU Library General Public License
+ version 2 can be found in `/usr/share/common-licenses/LGPL-2'.
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the Free
+ Software Foundation; either version 2.1 of the License, or (at your option) any
+ later version.
+ .
+ This library is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU Lesser General Public License along
+ with this library; if not, write to the Free Software Foundation, Inc., 51
+ Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ version 2.1 can be found in "/usr/share/common-licenses/LGPL-2.1".
+
+License: Ooura
+ You may use, copy, modify and distribute this code for any purpose (include
+ commercial use) and without fee.  Please refer to this package when you modify
+ this code.
+
+License: Unicode
+ This source code is provided as is by Unicode, Inc. No claims are made as to
+ fitness for any particular purpose. No warranties of any kind are expressed or
+ implied. The recipient agrees to determine applicability of information
+ provided. If this file has been purchased on magnetic or optical media from
+ Unicode, Inc., the sole remedy for any claim will be exchange of defective
+ media within 90 days of receipt.
+ .
+ Unicode, Inc. hereby grants the right to freely use the information supplied in
+ this file in the creation of products supporting the Unicode Standard, and to
+ make copies of this file in any form for internal or external distribution as
+ long as this notice remains attached.
+
+License: W3C
+ This work (and included software, documentation such as READMEs, or other
+ related items) is being provided by the copyright holders under the following
+ license.
+ .
+ LICENSE
+ .
+ By obtaining, using and/or copying this work, you (the licensee) agree that you
+ have read, understood, and will comply with the following terms and conditions.
+ .
+ Permission to copy, modify, and distribute this software and its documentation,
+ with or without modification, for any purpose and without fee or royalty is
+ hereby granted, provided that you include the following on ALL copies of the
+ software and documentation or portions thereof, including modifications:
+ .
+   - The full text of this NOTICE in a location viewable to users of the
+     redistributed or derivative work.
+   - Any pre-existing intellectual property disclaimers, notices, or terms and
+     conditions. If none exist, the W3C Software Short Notice should be included
+     (hypertext is preferred, text is permitted) within the body of any
+     redistributed or derivative code.
+   - Notice of any changes or modifications to the files, including the date
+     changes were made. (We recommend you provide URIs to the location from
+     which the code is derived.)
+ .
+ DISCLAIMERS
+ .
+ THIS SOFTWARE AND DOCUMENTATION IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE
+ NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT
+ THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY
+ PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+ .
+ COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR
+ CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.
+ .
+ The name and trademarks of copyright holders may NOT be used in advertising or
+ publicity pertaining to the software without specific, written prior
+ permission. Title to copyright in this software and any associated
+ documentation will at all times remain with copyright holders.
+ .
+ NOTES
+ .
+ This version:
+ http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
+ .
+ This formulation of W3C's notice and license became active on December 31
+ 2002. This version removes the copyright ownership notice such that this
+ license can be used with materials other than those owned by the W3C, reflects
+ that ERCIM is now a host of the W3C, includes references to this specific dated
+ version of the license, and removes the ambiguous grant of "use". Otherwise,
+ this version is the same as the previous version and is written so as to
+ preserve the Free Software Foundation's assessment of GPL compatibility and
+ OSI's certification under the Open Source Definition.
+
+License: Zlib
+ This software is provided 'as-is', without any express or implied warranty. In
+ no event will the authors be held liable for any damages arising from the use
+ of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose, including
+ commercial applications, and to alter it and redistribute it freely, subject to
+ the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not claim
+ that you wrote the original software. If you use this software in a product, an
+ acknowledgment in the product documentation would be appreciated but is not
+ required.
+ .
+ 2. Altered source versions must be plainly marked as such, and must not be
+ misrepresented as being the original software.
+ .
+ 3. This notice may not be removed or altered from any source distribution.
