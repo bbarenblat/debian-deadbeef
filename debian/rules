@@ -58,7 +58,7 @@ override_dh_auto_configure:
 	    --disable-psf \
 	    --enable-mono2stereo \
 	    --enable-shellexecui \
-	    --disable-alac \
+	    --enable-alac \
 	    --disable-wma \
 	    --enable-pltbrowser \
 	    --libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
