@@ -58,6 +58,9 @@ override_dh_auto_configure:
 	    --disable-pltbrowser \
 	    --libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
 
+override_dh_compress:
+	dh_compress -XChangeLog
+
 override_dh_install:
 	-$(RM) debian/tmp/usr/lib/*/deadbeef/*.la
 	-$(RM) debian/tmp/usr/lib/*/deadbeef/*.a
