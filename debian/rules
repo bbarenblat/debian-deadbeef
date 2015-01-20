@@ -23,7 +23,7 @@ override_dh_auto_configure:
 	    --enable-gtk3 \
 	    --enable-vfs-curl \
 	    --enable-lfm \
-	    --disable-artwork \
+	    --enable-artwork \
 	    --disable-artwork-network \
 	    --enable-supereq \
 	    --disable-sid \
@@ -52,7 +52,7 @@ override_dh_auto_configure:
 	    --enable-m3u \
 	    --disable-vfs-zip \
 	    --disable-converter \
-	    --disable-artwork-imlib2 \
+	    --enable-artwork-imlib2 \
 	    --disable-dumb \
 	    --disable-shn \
 	    --disable-psf \

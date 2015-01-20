@@ -15,6 +15,7 @@ Build-Depends:
  libflac-dev,
  libgtk2.0-dev (>= 2.12),
  libgtk-3-dev,
+ libimlib2-dev,
  libmad0-dev,
  libpulse-dev,
  libsndfile1-dev | libsndfile-dev,
