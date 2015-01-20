@@ -43,6 +43,17 @@ Description: Ultimate music player for GNU/Linux
  groups within playlists, album cover display, global hotkey support, and OSD
  integration.
 
+Package: deadbeef-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: deadbeef (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Ultimate music player for GNU/Linux systems - debug files
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
+ OpenSolaris, and other UNIX-like systems.
+ .
+ This package contains gdb debugging symbols for the deadbeef package.
+
 Package: deadbeef-plugins-dev
 Architecture: all
 Section: libdevel
