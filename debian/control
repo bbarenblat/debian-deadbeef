@@ -1060,7 +1060,7 @@ Package: deadbeef-plugins-dev
 Architecture: all
 Section: libdevel
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Ultimate music player for GNU/Linux systems - development files
+Description: Ultimate music player for GNU/Linux - development files
  DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux, *BSD,
  OpenSolaris, and other UNIX-like systems.
  .
