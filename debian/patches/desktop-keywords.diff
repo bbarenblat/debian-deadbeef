@@ -1,0 +1,15 @@
+From: Alexey Yakovenko <wakeroid@gmail.com>
+Description: added Keywords to deadbeef.desktop
+Origin: upstream, https://github.com/Alexey-Yakovenko/deadbeef/commit/6b7d85e27478c54fa9f5b218fbce566280ae3a8c
+Bug: https://code.google.com/p/ddb/issues/detail?id=1258
+--- a/deadbeef.desktop.in
++++ b/deadbeef.desktop.in
+@@ -16,6 +16,8 @@ X-PulseAudio-Properties=media.role=music
+ 
+ X-Ayatana-Desktop-Shortcuts=Play;Pause;Stop;Next;Prev
+ 
++Keywords=Sound;Music;Audio;Player;Musicplayer;MP3
++
+ [Play Shortcut Group]
+ Name=Play
+ Exec=deadbeef --play
