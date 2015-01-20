@@ -1,0 +1,523 @@
+From: Benjamin Barenblat <bbaren@mit.edu>
+Description: English grammar fix ‘allows to set’ → ‘allows setting’
+ This patch follows gtkui-grammar-allows-setting.diff and corrects more
+ instances of ‘allows to set’.
+Bug: https://code.google.com/p/ddb/issues/detail?id=1257
+Forwarded: no
+--- a/ChangeLog
++++ b/ChangeLog
+@@ -273,7 +273,7 @@ version 0.5.2
+ 	improvements in the command line handling code (Eugene Debrev)
+ 	shellexec now supports quoting strings for more flexibility
+ 	fixed resampler dsp plugin auto-configuration when the player is started for the 1st time
+-	plugin API now allows to extend playlist context menu
++	plugin API now allows extending playlist context menu
+ 	added "audio/ogg" mime-type support
+ 	fixed playing mp4/aac files with id3v2 tags
+ 
+--- a/plugins/gtkui/interface.c
++++ b/plugins/gtkui/interface.c
+@@ -4433,7 +4433,7 @@ create_setcustomtitledlg (void)
+   gtk_text_view_set_pixels_below_lines (GTK_TEXT_VIEW (textview2), 8);
+   gtk_text_view_set_left_margin (GTK_TEXT_VIEW (textview2), 8);
+   gtk_text_view_set_right_margin (GTK_TEXT_VIEW (textview2), 8);
+-  gtk_text_buffer_set_text (gtk_text_view_get_buffer (GTK_TEXT_VIEW (textview2)), _("This dialog allows to set custom title for any track. This is most useful for radio stations. An option to set the custom title is also present in the \"Add Location\" dialog. The title itself is visible in columns displaying the \"Artist\" metadata field. It should look like \"[custom] artist\" if the Artist field is present, or just \"custom\" otherwise."), -1);
++  gtk_text_buffer_set_text (gtk_text_view_get_buffer (GTK_TEXT_VIEW (textview2)), _("This dialog allows setting custom title for any track. This is most useful for radio stations. An option to set the custom title is also present in the \"Add Location\" dialog. The title itself is visible in columns displaying the \"Artist\" metadata field. It should look like \"[custom] artist\" if the Artist field is present, or just \"custom\" otherwise."), -1);
+ 
+   hbox123 = gtk_hbox_new (FALSE, 8);
+   gtk_widget_show (hbox123);
+--- a/po/be.po
++++ b/po/be.po
+@@ -1077,7 +1077,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/bg.po
++++ b/po/bg.po
+@@ -1072,7 +1072,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/bn.po
++++ b/po/bn.po
+@@ -1072,7 +1072,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/ca.po
++++ b/po/ca.po
+@@ -1071,7 +1071,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/cs.po
++++ b/po/cs.po
+@@ -1079,7 +1079,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/da.po
++++ b/po/da.po
+@@ -1073,7 +1073,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/de.po
++++ b/po/de.po
+@@ -1086,7 +1086,7 @@ msgstr "Aktion auswählen"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/el.po
++++ b/po/el.po
+@@ -1077,7 +1077,7 @@ msgstr "Επιλογή ενέργεια�
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/en_GB.po
++++ b/po/en_GB.po
+@@ -1069,7 +1069,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/es.po
++++ b/po/es.po
+@@ -1087,7 +1087,7 @@ msgstr "Seleccione una acción"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/et.po
++++ b/po/et.po
+@@ -1069,7 +1069,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/eu.po
++++ b/po/eu.po
+@@ -1080,7 +1080,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/fa.po
++++ b/po/fa.po
+@@ -1071,7 +1071,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/fi.po
++++ b/po/fi.po
+@@ -1086,7 +1086,7 @@ msgstr "Valitse toiminto"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/fr.po
++++ b/po/fr.po
+@@ -1089,7 +1089,7 @@ msgstr "Choisir une action"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/gl.po
++++ b/po/gl.po
+@@ -1087,7 +1087,7 @@ msgstr "Seleccionar acción"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/he.po
++++ b/po/he.po
+@@ -1072,7 +1072,7 @@ msgstr "בחירת פעולה"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/hr.po
++++ b/po/hr.po
+@@ -1075,7 +1075,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/hu.po
++++ b/po/hu.po
+@@ -1077,7 +1077,7 @@ msgstr "Válassz műveletet"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/id.po
++++ b/po/id.po
+@@ -1072,7 +1072,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/it.po
++++ b/po/it.po
+@@ -1069,7 +1069,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/ja.po
++++ b/po/ja.po
+@@ -1082,7 +1082,7 @@ msgstr "動作の選択"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/kk.po
++++ b/po/kk.po
+@@ -1079,7 +1079,7 @@ msgstr "Әрекетті таңдаңы�
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/km.po
++++ b/po/km.po
+@@ -1069,7 +1069,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/lg.po
++++ b/po/lg.po
+@@ -1085,7 +1085,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/lt.po
++++ b/po/lt.po
+@@ -1076,7 +1076,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/nl.po
++++ b/po/nl.po
+@@ -1076,7 +1076,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/pl.po
++++ b/po/pl.po
+@@ -1083,7 +1083,7 @@ msgstr "Wybierz działanie"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/pt.po
++++ b/po/pt.po
+@@ -1082,7 +1082,7 @@ msgstr "Escolha a ação"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/pt_BR.po
++++ b/po/pt_BR.po
+@@ -1076,7 +1076,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/ro.po
++++ b/po/ro.po
+@@ -1087,7 +1087,7 @@ msgstr "Alege acțiune"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/ru.po
++++ b/po/ru.po
+@@ -1103,7 +1103,7 @@ msgstr "Выбор действия"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/si_LK.po
++++ b/po/si_LK.po
+@@ -1074,7 +1074,7 @@ msgstr "ක්‍රියාව වර�
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/sk.po
++++ b/po/sk.po
+@@ -1072,7 +1072,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/sl.po
++++ b/po/sl.po
+@@ -1071,7 +1071,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/sr.po
++++ b/po/sr.po
+@@ -1076,7 +1076,7 @@ msgstr "Изаберите радњу"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/sr@latin.po
++++ b/po/sr@latin.po
+@@ -1076,7 +1076,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/sv.po
++++ b/po/sv.po
+@@ -1075,7 +1075,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/te.po
++++ b/po/te.po
+@@ -1068,7 +1068,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/tr.po
++++ b/po/tr.po
+@@ -1074,7 +1074,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/ug.po
++++ b/po/ug.po
+@@ -1074,7 +1074,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/uk.po
++++ b/po/uk.po
+@@ -1077,7 +1077,7 @@ msgstr "Оберіть дію"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/vi.po
++++ b/po/vi.po
+@@ -1078,7 +1078,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/zh_CN.po
++++ b/po/zh_CN.po
+@@ -1077,7 +1077,7 @@ msgstr "选择操作"
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
+--- a/po/zh_TW.po
++++ b/po/zh_TW.po
+@@ -1073,7 +1073,7 @@ msgstr ""
+ 
+ #: ../plugins/gtkui/interface.c:4436 ../plugins/gtkui/deadbeef.glade.h:203
+ msgid ""
+-"This dialog allows to set custom title for any track. This is most useful "
++"This dialog allows setting custom title for any track. This is most useful "
+ "for radio stations. An option to set the custom title is also present in the "
+ "\"Add Location\" dialog. The title itself is visible in columns displaying "
+ "the \"Artist\" metadata field. It should look like \"[custom] artist\" if "
