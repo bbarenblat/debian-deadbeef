@@ -29,7 +29,7 @@ override_dh_auto_configure:
 	    --disable-sid \
 	    --enable-mad \
 	    --disable-ffap \
-	    --disable-vtx \
+	    --enable-vtx \
 	    --disable-adplug \
 	    --enable-hotkeys \
 	    --enable-vorbis \
