@@ -1,2 +1,2 @@
-usr/lib/*/deadbeef/converter.so
+usr/lib/${DEB_HOST_MULTIARCH}/deadbeef/converter.so
 usr/share/deadbeef/convpresets

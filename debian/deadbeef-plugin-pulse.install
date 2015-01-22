@@ -1,1 +1,1 @@
-usr/lib/*/deadbeef/pulse.so
+usr/lib/${DEB_HOST_MULTIARCH}/deadbeef/pulse.so

@@ -1,1 +1,1 @@
-usr/lib/*/deadbeef/hotkeys.so
+usr/lib/${DEB_HOST_MULTIARCH}/deadbeef/hotkeys.so

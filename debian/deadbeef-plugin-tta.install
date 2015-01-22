@@ -1,1 +1,1 @@
-usr/lib/*/deadbeef/tta.so
+usr/lib/${DEB_HOST_MULTIARCH}/deadbeef/tta.so

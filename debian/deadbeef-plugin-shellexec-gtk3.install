@@ -1,1 +1,1 @@
-usr/lib/*/deadbeef/shellexecui_gtk3.so
+usr/lib/${DEB_HOST_MULTIARCH}/deadbeef/shellexecui_gtk3.so
