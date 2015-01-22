@@ -1,5 +1,5 @@
-deadbeef (0.6.2+dfsg-1) UNRELEASED; urgency=low
+deadbeef (0.6.2+dfsg-1) unstable; urgency=low
 
   * Initial release (closes: #576975).
 
- -- Benjamin Barenblat <bbaren@mit.edu>  Sun, 28 Dec 2014 20:25:32 -0600
+ -- Benjamin Barenblat <bbaren@mit.edu>  Thu, 22 Jan 2015 13:26:01 -0500
