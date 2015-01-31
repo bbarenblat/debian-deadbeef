@@ -5,6 +5,7 @@ Maintainer: Benjamin Barenblat <bbaren@mit.edu>
 Build-Depends:
  debhelper (>= 9),
  dh-autoreconf,
+ dh-exec,
  intltool,
  libasound2-dev,
  libavformat-dev,
