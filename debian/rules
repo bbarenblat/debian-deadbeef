@@ -115,7 +115,3 @@ override_dh_install:
 .PHONY: override_dh_installdocs
 override_dh_installdocs:
 	dh_installdocs -XREADME
-
-.PHONY: override_dh_builddeb
-override_dh_builddeb:
-	dh_builddeb -- -Zxz -z9
